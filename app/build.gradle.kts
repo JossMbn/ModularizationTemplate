@@ -1,6 +1,9 @@
+import com.jmabilon.modularizationtemplate.implementation
+
 plugins {
     alias(libs.plugins.convention.android.application)
     alias(libs.plugins.convention.compose)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -14,5 +17,9 @@ android {
 }
 
 dependencies {
+    implementation(projects.feature.onBoarding.presentation)
+
     implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.compose.navigation)
+    implementation(libs.kotlin.serialization.json)
 }

@@ -1,5 +1,5 @@
 pluginManagement {
-    includeBuild("build-logic")
+    includeBuild("build_logic")
     repositories {
         google {
             content {
@@ -21,4 +21,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "ModularizationTemplate"
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":app")
+include(":feature:on_boarding:presentation")
