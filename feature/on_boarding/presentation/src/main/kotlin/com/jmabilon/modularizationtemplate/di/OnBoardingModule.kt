@@ -1,6 +1,6 @@
-package di
+package com.jmabilon.modularizationtemplate.di
 
-import OnBoardingViewModel
+import com.jmabilon.modularizationtemplate.OnBoardingViewModel
 import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
 

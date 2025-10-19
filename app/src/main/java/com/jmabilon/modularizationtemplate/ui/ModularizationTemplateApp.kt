@@ -1,12 +1,12 @@
-package com.jmabilon.modularizationtemplate
+package com.jmabilon.modularizationtemplate.ui
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
-import com.jmabilon.modularizationtemplate.navigation.OnBoardingRoute
-import com.jmabilon.modularizationtemplate.navigation.onBoardingPage
+import com.jmabilon.modularizationtemplate.navigation.HomeRoute
+import com.jmabilon.modularizationtemplate.navigation.homePage
 
 @Composable
 fun ModularizationTemplateApp(
@@ -17,8 +17,8 @@ fun ModularizationTemplateApp(
     NavHost(
         modifier = modifier.fillMaxSize(),
         navController = controller,
-        startDestination = OnBoardingRoute
+        startDestination = HomeRoute
     ) {
-        onBoardingPage(controller = controller)
+        homePage()
     }
 }

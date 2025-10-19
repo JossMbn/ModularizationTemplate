@@ -6,12 +6,9 @@ plugins {
 }
 
 android {
-    namespace = "com.jmabilon.modularizationtemplate.feature.onboarding.presentation"
+    namespace = "com.jmabilon.modularizationtemplate.feature.home.presentation"
 }
 
 dependencies {
-    implementation(projects.core.ui)
-    implementation(projects.domain.application.usecase)
-
     implementation(libs.androidx.lifecycle.viewmodel)
 }
