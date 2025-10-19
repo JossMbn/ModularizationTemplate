@@ -18,6 +18,8 @@ android {
 
 dependencies {
     implementation(projects.feature.onBoarding.presentation)
+    implementation(projects.domain.application.usecase)
+    implementation(projects.data.preferences.application)
 
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.navigation)

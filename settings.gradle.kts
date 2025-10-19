@@ -22,5 +22,12 @@ dependencyResolutionManagement {
 
 rootProject.name = "ModularizationTemplate"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 include(":app")
+include(":core")
 include(":feature:on_boarding:presentation")
+include(":core:datastore")
+include(":domain:application:model")
+include(":domain:application:repository")
+include(":domain:application:usecase")
+include(":data:preferences:application")

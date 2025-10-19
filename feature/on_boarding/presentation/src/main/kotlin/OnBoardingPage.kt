@@ -9,13 +9,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.lifecycle.viewmodel.compose.viewModel
 import model.OnBoardingAction
 import model.OnBoardingState
+import org.koin.androidx.compose.koinViewModel
 
 @Composable
 fun OnBoardingRoot(
-    viewModel: OnBoardingViewModel = viewModel(),
+    viewModel: OnBoardingViewModel = koinViewModel(),
     navigator: OnBoardingNavigator
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
